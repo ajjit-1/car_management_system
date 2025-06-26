@@ -17,5 +17,31 @@ This is a web-based Car Management System built using Django. It allows users to
 - SQLite (default)
 - HTML, CSS, JavaScript (for frontend)
 
-## 📂 Project Structure
+##  Project Structure
+online_car_project/
+├── car/
+│ ├── models.py
+│ ├── views.py
+│ ├── urls.py
+│ └── templates/all html
+├── online_car_project/
+│ ├── settings.py
+│ ├── urls.py
+├── db.sqlite3
+└── manage.py
+## ⚙️ Setup Instructions
 
+1. Clone the repository:  cd car-management-system
+
+2. Create a virtual environment and activate it:python -m venv venv
+                                                venv\Scripts\activate
+
+3. Install dependencies: pip install -r requirements.txt
+
+4. Run migrations: python manage.py makemigrations
+                   python manage.py migrate
+
+
+5. Create a superuser:python manage.py createsuoeruser
+
+6.run this project : - python manage.py runserver
